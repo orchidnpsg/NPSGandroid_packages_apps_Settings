@@ -179,4 +179,6 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class ExtraSettingsActivity extends SettingsActivity {}
 
+	// LiquidRemix settings
+    public static class LiquidLoungeSettingsActivity extends SettingsActivity {}
 }
