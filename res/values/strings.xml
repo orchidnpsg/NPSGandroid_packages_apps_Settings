@@ -11436,5 +11436,7 @@
     <string name="orchid_app_header">NPSG</string>
     <!-- introducing app warden -->
     <string name="app_warden_open">AppWarden</string>
-  
+
+    <!-- Strings for suggestion card's close button -->
+    <string name="suggestion_button_close">Close</string>
 </resources>
