@@ -22,6 +22,7 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+
      <!-- addintional info -->
      <Preference
         android:key="googlebanner_animation"
@@ -38,5 +39,6 @@
         android:key="Aliquid_logo"
         android:enabled="false"
         android:layout="@layout/Aliquid_logo"/>
+
 
 </PreferenceScreen>
