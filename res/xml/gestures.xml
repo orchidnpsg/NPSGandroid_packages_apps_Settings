@@ -95,21 +95,10 @@
         android:fragment="com.android.settings.gestures.GlobalActionsPanelSettings"
         settings:controller="com.android.settings.gestures.GlobalActionsPanelPreferenceController" />
 
-    <!-- Double tap to sleep -->
-    <lineageos.preference.LineageSystemSettingSwitchPreference
-        android:key="double_tap_sleep_gesture"
-        android:title="@string/status_bar_double_tap_to_sleep_title"
-        android:summary="@string/status_bar_double_tap_to_sleep_summary"
-        android:defaultValue="true" />
+    <Preference
+        android:key="three_finger_gesture_summary"
+        android:title="@string/three_finger_gesture"
+        android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
+        settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
 
-  <!-- addintional info -->
-     <Preference
-        android:key="googlebanner_animation"
-        android:layout="@layout/googlebanner_animation"/>
-
-    <!-- Orchid logo -->
-    <PreferenceScreen
-        android:key="orchid_logo"
-        android:enabled="false"
-        android:layout="@layout/orchid_logo"/>
 </PreferenceScreen>
