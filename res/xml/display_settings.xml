@@ -23,6 +23,10 @@
     settings:keywords="@string/keywords_display"
     settings:initialExpandedChildrenCount="5">
 
+   <Preference
+        android:key="display_animation"
+        android:layout="@layout/display_animation" />
+
     <com.android.settingslib.RestrictedPreference
         android:key="brightness"
         android:title="@string/brightness"
@@ -192,5 +196,24 @@
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
+
+    <Preference
+        android:key="kcal_display_pref"
+        android:title="@string/kcal_settings_title"
+        android:summary="@string/kcal_settings_summary"
+		settings:controller="com.android.settings.display.KCALPreferenceController" />
+
+    <Preference
+        android:key="game_driver_dashboard"
+        android:title="@string/game_driver_dashboard_title"
+        android:summary="@string/game_driver_dashboard_summary"
+        android:fragment="com.android.settings.development.gamedriver.GameDriverDashboard" />
+
+	<!-- Orchid logo -->
+    <PreferenceScreen
+        android:key="orchid_logo"
+        android:enabled="false"
+        android:layout="@layout/orchid_logo"/>
+
 
 </PreferenceScreen>
