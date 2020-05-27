@@ -13,7 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Extra Settings -->
-    <string name="extra_settings_title">OrchidOs Extras</string>
-    <string name="extra_settings_summary">Additional Options</string>
+    <string name="extra_settings_title">NPSG CORE EXTRAS</string>
+    <string name="extra_settings_summary">NPSG ZONE</string>
 
 </resources>
