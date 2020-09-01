@@ -92,7 +92,11 @@ public class BluetoothDevicesSlice implements CustomSliceable {
 
         final IconCompat icon = IconCompat.createWithResource(mContext,
                 com.android.internal.R.drawable.ic_settings_bluetooth);
-        final CharSequence title = mContext.getText(R.string.bluetooth_devices);
+        final Drawable d = mContext.getDrawable(R.drawable.ic_add_24dp);
+        int color = Utils.getColorAttrDefaultColor(mContext, android.R.attr.colorControlNormal);
+        d.setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_IN));
+        final IconCompat pairNewIcon = Utils.createIconWithDrawable(d);
+        final CharSequence title = "     " + mContext.getText(R.string.bluetooth_devices);
         final CharSequence titleNoBluetoothDevices = mContext.getText(
                 R.string.no_bluetooth_devices);
         final PendingIntent primaryActionIntent = PendingIntent.getActivity(mContext, 0,
@@ -121,7 +125,7 @@ public class BluetoothDevicesSlice implements CustomSliceable {
         // According to the displayable device count to set sub title of header.
         listBuilder.setHeader(new ListBuilder.HeaderBuilder()
                 .setTitle(title)
-                .setSubtitle(getSubTitle(deviceCount))
+                .setSubtitle("       " + getSubTitle(deviceCount))
                 .setPrimaryAction(primarySliceAction));
 
         // According to the displayable device count to add bluetooth device rows.
