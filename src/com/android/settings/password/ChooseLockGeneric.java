@@ -79,8 +79,6 @@ import com.android.settingslib.widget.FooterPreferenceMixinCompat;
 
 import java.util.List;
 
-import com.android.internal.util.custom.faceunlock.FaceUnlockUtils;
-
 public class ChooseLockGeneric extends SettingsActivity {
     public static final String CONFIRM_CREDENTIALS = "confirm_credentials";
 
